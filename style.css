@@ -1,0 +1,74 @@
+/*
+Theme Name: thatcamp-chnm-2013
+Theme URI: the-theme's-homepage
+Description: child theme of Twenty Twelve for THATCamp 2013
+Author: Chris Raymond
+Author URI: http://www.designtank.ws
+Template: twentytwelve
+Version: a-number--optional
+.
+Released under GPL
+.
+*/
+@import url(../twentytwelve/style.css);
+/*=== GENERAL =====*/
+a {
+	color: #CD833A;
+	-moz-transition:  	all 500ms ease-in-out 250ms;
+	-gecko-transition:  all 500ms ease-in-out 250ms;
+	-webkit-transition: all 500ms ease-in-out 250ms;
+	transition:   		all 500ms ease-in-out 250ms;	
+}
+a:hover, .widget-area .widget a:hover {color: #492A38;}
+body {background: #40313A;}
+.site {background: #FCF9F3;}
+
+
+/*==== HEADER ======= */
+.site-header {padding:1.71429rem 0 0.857145rem;}
+.site-content {padding-top: 0.857145rem;}
+#sliding-header {height:230px;max-width:910px;}
+	#sliding-header img {
+		max-width:100%;max-height:100%;
+		/*position:absolute; left:35px !important;*/
+	}
+	/* Maximum width of 600 pixels. */
+	@media only screen and (max-width: 600px) {
+		#sliding-header {height:125px !important;}
+	}
+.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {
+	padding:8px 0;
+}
+.main-navigation li a {
+    border-bottom: 0 none;
+    color: #6A6A6A;
+    line-height: 1.845;
+    text-transform: uppercase;
+    white-space: nowrap;
+	background: #FCF9F3;
+	padding:0px 12px;
+	border-radius:12px;
+}
+.main-navigation li a:hover {
+	background: #cd833a;
+	color: #fff;
+} 
+/*== CONTENT ===*/
+#primary, #secondary {margin-top:0;}
+#secondary {padding-top:0.857145rem;}
+.widget-area a {color:#636363;}
+.widget-area .widget h3 {
+    margin-bottom:8px;
+	margin-bottom: 0.57413rem; /* override the RIDICULOUS amount of spacing below a subhead in WP default style 
+									DIE FLOATING HEADS DIE*/
+}
+
+.entry-content img, .comment-content img, .widget img {/*  OOPS TWENTY TWELVE FORGETS THAT IMAGES NEED MARGINS. D'OH*/
+    margin: 24px 8px 0 0;
+	margin: 1.714285714rem 0.57143rem 0 0; ( 24 / $rembase );
+}
+
+#colophon a {text-decoration:none;}
+
+.widget-area li {margin-bottom:8px;margin-bottom: 0.57143rem;}
+.widget-area li a, #secondary .textwidget a {text-decoration:none;}
