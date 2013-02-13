@@ -448,3 +448,20 @@ function twentytwelve_customize_preview_js() {
 	wp_enqueue_script( 'twentytwelve-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20120827', true );
 }
 add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
+
+/**
+  * Load crossslide scripts for home page
+  */
+add_action( 'wp_enqueue_scripts', 'tc_load_javascript_files' );
+
+// Register some javascript files, because we love javascript files. Enqueue a couple as well 
+
+//function tc_load_javascript_files() {
+
+//  wp_register_script( 'home-page-cross-slider', get_stylesheet_directory_uri().'/js/crossslide.js' );
+
+//  if ( is_front_page() ) {
+//    wp_enqueue_script('home-page-cross-slider');
+//  }
+
+//}
